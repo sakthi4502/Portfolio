@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <title>Portfolio | Sakthivel</title>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <!--AOS Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- FAVICON -->
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAARkZGACQkJADr6+sAAgICAAsLCwA/Pz8AFBQUAHNzcwBRUVEAJiYmAAQEBAD///8AxMTEAENDQwB3d3cAGBgYAFVVVQA8PDwAERERAE5OTgABAQEANTU1AHt7ewAlJSUAhISEAAMDAwBra2sAysrKAH19fQBSUlIAJycnAO7u7gCPj48AMDAwAAUFBQD39/cAoaGhACAgIADe3t4AiIiIAAcHBwBvb28AEBAQAERERACjo6MAGRkZANfX1wAiIiIAKysrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAAAAAACwAEjEeGyoHGAAAAAAAFQAAIQwMAAwMDBcAAAAAAAAAAAwMDAMcAg4ZAAAAAAAAJQ0MDAgWAAUfFQAAAAAAAAABDwwRACEVABMeHhoAAAAAChUMLgwUFSMAAAAAAAAABBANDCkMKAsrJgAAAAAwAAAJDAwnByItIAAAAAAAAAAAAAAMDAwMJC8GAAAAAAAAAAAVHQAAAAAVABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    rel="icon" type="image/x-icon" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+    body {
+      margin: 10px;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      /* background-color: lavender; */
+      background-image: url("back.jpg");
+      text-decoration: none;
+    }
+
+    h3 {
+      color: orangered;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .lead {
+      font-size: 55px;
+    }
+
+    b {
+      color: orangered;
+      font-size: 55px;
+    }
+
+    ul li a {
+      color: lightslategray;
+      font-size: 18px;
+    }
+
+    ul li a:hover {
+      font-size: 18px;
+      color: lightslategray;
+      border: 2px solid orangered;
+    }
+
+    /* EDUCATION */
+    .container {
+      padding: 4%;
+      margin-top: 2%;
+      text-align: center;
+      background-position: center;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .head {
+      padding: 8%;
+    }
+
+    .head h1 {
+      font-size: 8vw;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .itemcontent {
+      padding: 0 35px 35px;
+      margin: 0px 25px 25px 0px;
+      height: 375px;
+      background-color: blanchedalmond;
+      width: 290px;
+      box-shadow: 5px 10px 8px gray;
+    }
+
+    .itemcontent:hover {
+      background-color: lightblue;
+    }
+
+    .itemcontent p {
+      text-align: justify;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 5%;
+      color: lightslategray;
+    }
+
+    .itemcontent i {
+      margin-top: 15%;
+
+    }
+
+    /* CERTIFICATES AND WORKSHOP */
+    .item1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .itemcontent1 {
+      padding: 0 35px 35px;
+      margin: 0px 25px 25px 0px;
+      height: 635px;
+      width: 435px;
+    }
+
+
+    .itemcontent1 p {
+      text-align: justify;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 5%;
+      color: lightslategray;
+    }
+
+    .itemcontent1 i {
+      margin-top: 8%;
+    }
+
+    /* PROJECTS*/
+    .item2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .itemcontent2 {
+      padding: 0 35px 35px;
+      margin: 0px 25px 25px 0px;
+      height: 280px;
+      width: 435px;
+    }
+
+
+    .itemcontent2 p {
+      text-align: justify;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 5%;
+      color: lightslategray;
+    }
+
+    .itemcontent2 i {
+      margin-top: 8%;
+    }
+
+    img {
+      margin-top: 8%;
+    }
+
+    /* TECHNICAL SKILLS */
+    .container3 {
+      padding: 4%;
+      margin-top: 2%;
+      text-align: center;
+      background-position: center;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .item3 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* .itemcontent3 {
+      padding: 0 35px 35px;
+      margin: 0px 25px 25px 0px;
+      color: red;
+      border-radius: 9999px;
+      height: 32px;
+      width: 32px;
+    }
+
+
+    .itemcontent3 p {
+      text-align: justify;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 5%;
+      color: lightslategray;
+    }
+
+    .itemcontent3 i {
+      margin-top: 8%;
+    } */
+    .badge {
+      align-items: center;
+      padding: 10px 15px 15px;
+      margin: 10px 25px 25px 0px;
+      display: flex;
+      color: lightslategray;
+      font-size: 20px;
+      text-align: center;
+      justify-content: center;
+      background-color: lightblue;
+      border-radius: 9999px;
+      height: 82px;
+      width: 82px;
+    }
+
+    .badge:hover {
+      transform: translate(0, -10px);
+
+    }
+
+    .badge:nth-child(1) {
+      background-color: #B5DDA4;
+    }
+
+    .badge:nth-child(2) {
+      background-color: #d9ae61;
+    }
+
+    .badge:nth-child(3) {
+      background-color: #f4d06f;
+    }
+
+    .badge:nth-child(4) {
+      background-color: #afafdc;
+    }
+
+    .badge:nth-child(5) {
+      background-color: #f7af9d;
+    }
+
+    img {
+      margin-top: 8%;
+    }
+
+    /* FOOTER  */
+    .container4 {
+      padding: 4%;
+      margin-top: 2%;
+      text-align: center;
+      background-position: center;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .item4 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .itemcontent4 {
+      padding: 0 35px 35px;
+      margin: 0px 25px 25px 0px;
+      height: 270px;
+      width: 300px;
+    }
+
+    .itemcontent4 p {
+      text-align: left;
+      display: inline-block;
+      font-family: 'Quicksand', sans-serif;
+      margin-top: 5%;
+      color: lightslategrey;
+    }
+
+    /* FOOTER ENDS */
+  </style>
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <div class="container-fluid">
+
+    <nav data-aos="fade-down" data-aos-delay="1000" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#Home">
+        <h3><b style="color: grey;">S</b>akthivel</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Achievements</a>
+                </li> -->
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="Home">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home" style="color: lightslategrey;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="color: lightslategrey;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education" style="color: lightslategrey;">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate" style="color: lightslategrey;">Certificates & Workshop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Project" style="color: lightslategrey;">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color: lightslategrey;">Contact</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <!-- <div class="container">
+
+      <div class="row my-5" style="user-select: auto;">
+
+        <div class="col-md-7" style="user-select: auto;">
+
+          <p class="lead" style="user-select: auto; text-align: justify;">Hi, I'm <b>Sakthivel</b>
+          <h5>B.E. Computer Science and Engineering</h5>
+          Profile</p>
+
+        </div>
+        <div class="col-md-5" style="user-select: auto;">
+          <img src="" height="auto" width="75%">
+        </div>
+      </div>
+
+    </div>
+  </div> -->
+    <!-- MAIN CONTENT --><br><br><br>
+    <div data-aos="fade-up" data-aos-delay="1000" class="container">
+      <div class="item">
+        <div class="head" id="about">
+          <p class="lead" style="user-select: auto; text-align: justify;">Hi, <br> I'm <b>Sakthivel</b><br>Bachelor of
+            Engineering (CSE)</p>
+          <!-- <center>
+                <h1 style="font-size: 8vw; color: lavender; text-align: left;">Hi, I'm </h1><b>Sakthivel</b>
+                <h5>B.E. Computer Science and Engineering</h5>
+            </center><br> --><br><br><br><br>
+          <h3>About_</h3>
+          <br><br>
+          <p style="text-align: justify;">A systematic, hardworking with B.E, in
+            Computer Science & Engineering.
+            An optimistic individual and team work
+            with sincerity towards work.
+            Ability to continuously strive for
+            improvement in existing processes</p>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+
+      <div class="container">
+        <h3 id="education">Education_</h3>
+        <br><br>
+        <div class="item">
+          <div data-aos="fade-up" data-aos-delay="1000" class="itemcontent"><i class="fa fa-graduation-cap fa-5x"
+              style="color: grey;"></i>
+            <br><br>
+            <p><b style="font-size: 20px;">2018-2022 (UG)</b><br> B.E CSE <br>CGPA - 8.09<br>
+              Kings Engineering College<br>
+              Irrungattukotai, <br>Sriperumbudur
+              Chennai.</p>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="1000" class="itemcontent"><i class="fa fa-suitcase fa-5x "
+              style="color: lightsalmon;"></i><br><br>
+            <p><b style="font-size: 20px;">2017-2018 (HSC)</b><br> Higher Secondary<br>Percentage - 68.25%<br>
+              Government Boys Higher Secondary School<br>
+              Walajapet, <br>Ranipet District
+              632513.</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="1000" class="itemcontent"><i class="fa fa-book fa-5x"
+              style="color: lightseagreen;"></i><br><br>
+            <p><b style="font-size: 20px;">2015-2016 (SSLC)</b><br> SSLC<br>Percentage - 86%<br>
+              Government Boys Higher Secondary School<br>
+              Walajapet, <br>Ranipet District
+              632513.</p>
+          </div>
+        </div>
+      </div><br><br>
+      <!-- TECHNICAL SKILLS -->
+
+      <div class="container3">
+        <h3 id="education">Technical Skills_</h3>
+        <br><br>
+        <div class="item3">
+          <div class="badge">Java</div>
+          <div class="badge">C</div>
+          <div class="badge">Python</div>
+          <div class="badge">HTML</div>
+          <div class="badge">CSS</div>
+
+        </div>
+      </div><br><br>
+      <!--Certificates and Workshop  -->
+
+      <div class="container1">
+        <h3 id="certificate">Certificates and Workshop_</h3>
+        <br><br>
+        <div class="item1">
+          <div class="itemcontent1" id="certificate"><i class="fa fa-address-card-o fa-5x" style="color: grey;"></i>
+            <br><br>
+            <p style="color: black;"><i class="fa fa-check" style="color: lightgreen;"></i>
+              NSIC Certified Program in Computer Application.<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              GETS Certificate level 5 scored 72 marks.<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Certificate in NPTEL – Programming in java got
+              70%.<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Html and JavaScript fundamental course in SOLO LEARN.<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Dakshin Bharath Hindi Prachar Sabha Hindi
+              Exams - Prathmic, Madhyama, Rastrabasha.
+            </p>
+          </div>
+          <div class="itemcontent1"><i class="fa fa-users fa-5x " style="color: grey;"></i><br><br>
+            <p style="color: black;">
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Workshop on IOT – DLK career Development (2020)<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Attended one day hands on workshop on Raspberry pi (2021)<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              IOT and Product developmentusing Raspberry pi (Embeddvar Tech Solution)<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Attended one day hands on workshop on mobile application development using ionic framework.(2021)<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Virtual guest lecture on Machine Learning and Computer Vision.<br>
+              <i class="fa fa-check" style="color: lightgreen;"></i>
+              Webinar on Mobile phone design and android OS.
+            </p>
+          </div>
+
+        </div>
+      </div><br><br>
+
+      <!-- PROJECTS -->
+
+      <div class="container2" id="Project">
+        <h3 id="certificate">Projects_</h3>
+        <br><br>
+        <div class="item2">
+          <div class="itemcontent2" style="background-color: lightseagreen; clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0 0);
+          "><i class="fa fa-address-card-o fa-5x" style="color: grey;"></i>
+            <br><br>
+            <p style="color: white;">
+              TITLE: Night Patrol robot for Detecting and
+              Tracking of Human Motions using Proximity
+              Sensors.
+            </p>
+          </div>
+          <div class="itemcontent2" style="background-color: #c8963e; clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 20% 100%, 0% 80%, 0 0);
+          "><img src="ihub.png" width="45%" height="auto">
+            <br><br>
+            <p style="color: white;">
+
+              Title: i-hub- One of the frontend developers in
+              i-hub Website for our department.
+            </p>
+          </div>
+          <div class="itemcontent2"
+            style="background-color: violet; clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0 100%, 0 0);">
+            <img src="hackathon.png" width="75%" height="auto">
+            <br><br>
+            <p style="color: white;">
+              TITLE: Hackathon’22 – Developed hackathon
+              Website Front-End for our department.
+            </p>
+          </div>
+          <div class="itemcontent2"
+            style="background-color: lightblue; clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 20% 100%, 0 100%, 0% 20%);">
+            <i class="fa fa-shopping-bag fa-4x" style="color: palevioletred;"></i>
+            <br><br>
+            <p style="color: brown;">
+              TITLE: Github: https://sakthi4502.github.io/e-commerce/
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER STARTS -->
+
+    <div class="container4">
+      <h3 id="contact" style="color: orangered;">Get Connect through</h3><br>
+      <div class="item4">
+
+        <div class="itemcontent4" id="contact">
+          <p>Know more</p><br>
+          <p>
+            <a href="#Home" style="color: lightslategray; text-decoration: none;">Home</a><br>
+            <a href="#about" style="color: lightslategray; text-decoration: none;">About</a><br>
+            <a href="#education" style="color: lightslategray; text-decoration: none;">Education</a><br>
+            <a href="#certificate" style="color: lightslategray; text-decoration: none;">Certificate & Workshop</a><br>
+            <a href="#Project" style="color: lightslategray; text-decoration: none;">Project</a><br>
+            <a href="#contact" style="color: lightslategray; text-decoration: none;">contact</a><br>
+
+
+
+          </p><br>
+        </div>
+        <div class="itemcontent4">
+          <p>Contact</p><br>
+
+          <p>
+            <img src="location.png"><br>70, Perumal Koil Street,<br> Walajapet,<br> Ranipet District<br><br>
+            <i class="fa fa-envelope-o fa-2x" aria-hidden="true" style="color: black;"></i><br> sakthivel4502@gmail.com
+          </p>
+
+        </div>
+        <div class="itemcontent4">
+          <p>Follow on</p><br>
+          <!-- Favicon image -->
+          <p><a href="https://github.com/sakthi4502"><img src="github.png"></a></p>
+          <p> <a href="www.linkedin.com/in/sakthivel-t-3352ba206"><img src="linkedin-circled.png"></a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER BOOTSTRAP -->
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
